@@ -1,0 +1,129 @@
+* {
+   font-family: sans-serif;
+}
+.container {
+   margin: 0px auto;
+   width: 750px;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+h1 {
+   font-family: sans-serif black;
+   font-size: 3rem;
+}
+.tableWrapper {
+   display: block;
+   position: relative;
+   width: 100%;
+}
+table {
+   border-collapse: collapse;
+   width: 100%;
+}
+td,
+th {
+   padding: 10px;
+}
+.inputs {
+   display: flex;
+   position: relative;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 2rem;
+}
+.inputs input {
+   border: none;
+   font-size: 1rem;
+   padding: 15px;
+   outline: 0px solid white;
+   margin: 5px;
+   transition: all 0.2s ease-in-out;
+   box-shadow: inset 0 0 3px 2px rgba(138, 43, 226, 0.3);
+   border-radius: 5px;
+}
+
+.inputs input:focus {
+   outline: 2px solid rgba(137, 43, 226, 0.4);
+}
+
+#inputttl {
+   flex-basis: 20%;
+}
+#inputdesc {
+   flex-basis: 50%;
+}
+button {
+   padding: 5px 15px;
+   border: none;
+   cursor: pointer;
+}
+.btn {
+   padding: 10px 25px;
+   margin-left: 1rem;
+   border-radius: 5px;
+   font-weight: bold;
+}
+#addbtn {
+   color: white;
+   background-color: green;
+   transition: background-color 0.2s ease-in-out;
+}
+#addbtn:hover {
+   background-color: rgb(25, 158, 25);
+}
+#editbtn {
+   color: white;
+   background-color: #0000d0;
+   transition: background-color 0.2s ease-in-out;
+}
+#editbtn:hover {
+   background-color: #3737ee;
+}
+#dltbtn {
+   color: white;
+   background-color: red;
+   transition: background-color 0.2s ease-in-out;
+}
+#dltbtn:hover {
+   background-color: rgb(145, 5, 5);
+}
+
+#modifyForm {
+   display: none;
+   flex-direction: column;
+}
+
+#modify {
+   background-color: blueviolet;
+   color: white;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   transition: background-color 0.2s ease-in-out;
+}
+#modify:hover {
+   background-color: rgb(93, 27, 155);
+}
+#cancel {
+   background-color: rgb(190, 21, 21);
+   color: white;
+   transition: background-color 0.2s ease-in-out;
+}
+#cancel:hover {
+   background-color: red;
+}
+#modify-title{
+   width: 90%;
+}
+#modify-desc{
+   width: 90%;
+   border: none;
+   font-size: 1rem;
+   padding: 15px;
+   outline: 0px solid white;
+   margin: 5px;
+   transition: all 0.2s ease-in-out;
+   box-shadow: inset 0 0 3px 2px rgba(138, 43, 226, 0.3);
+   border-radius: 5px;
+}

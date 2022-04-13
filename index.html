@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>To Do App</title>
+      <link rel="stylesheet" href="style.css" />
+      <script src="app.js" defer></script>
+   </head>
+
+   <body>
+      <div class="container">
+         <h1>To Do App</h1>
+         <div class="tableWrapper">
+            <table border="1">
+               <colgroup>
+                  <col style="width: 5%" />
+                  <col style="width: 28%" />
+                  <col style="width: 45%" />
+                  <col style="width: 22%" />
+               </colgroup>
+               <thead>
+                  <tr>
+                     <th>#</th>
+                     <th>Title</th>
+                     <th>Description</th>
+                     <th>Action</th>
+                  </tr>
+               </thead>
+               <tbody id="table-body"></tbody>
+            </table>
+         </div>
+         <form class="inputs" id="addForm">
+            <input id="inputttl" type="text" placeholder="Task Title" />
+            <input id="inputdesc" type="text" placeholder="Description" />
+            <button id="addbtn" class="btn" type="submit">Add</button>
+         </form>
+         <form id="modifyForm" class="inputs">
+            <input type="text" id="modify-title" />
+            <textarea col="20" row="20" id="modify-desc"></textarea>
+            <div class="buttons">
+               <button type="submit" id="update" class="btn">UPDATE</button>
+               <button id="cancel" class="btn">CANCEL</button>
+            </div>
+         </form>
+      </div>
+   </body>
+</html>
